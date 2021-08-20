@@ -25,7 +25,7 @@ import tensorflow as tf
 
 import params as yamnet_params
 import yamnet as yamnet_model
-output = open('covid19_data_0426_yamnet_check.list','w')
+output = open('covid19_data_0426_yamnet_all.list','w')
 
 
 def main():
