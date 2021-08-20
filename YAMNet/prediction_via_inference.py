@@ -7,7 +7,7 @@ import glob, os, sys
 yamnet_outputFile ="data_0426_yamnet_all.list"
 outputFile = yamnet_outputFile.replace('.list', '_final.list')
 
-yamnetData = np.genfromtxt(yamnet_outputFile,delimiter=';', dtype=np.str)
+yamnetData = np.genfromtxt(covid19_data_0426_yamnet_check,delimiter=';', dtype=np.str)
 prediction_list = []
 prediction_prob = []
 prediction_first = []
