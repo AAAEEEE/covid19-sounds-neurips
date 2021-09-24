@@ -3,7 +3,7 @@ This repo is for our submission *COVID-19 Sounds: A Large-Scale Audio Dataset fo
 
 ## Dataset
 
-As introduced in the paper, for full data access, a DTA needs to be signed. Subsets used for two evaluated tasks are also available on request.
+As introduced in the paper, for full data access, a DTA needs to be signed. Subsets used for two evaluated tasks are also available on request. Meta data and statistics can refer to `data_statistics.ipynb`.
 
 Contact: covid-19-sounds@cl.cam.ac.uk
 
