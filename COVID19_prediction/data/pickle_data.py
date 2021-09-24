@@ -26,8 +26,8 @@ FRAME_LEN = int(SR/10) #100 ms
 HOP = int(FRAME_LEN/2) #50%overlap, 5ms
 MFCC_DIM =13
 
-path = '0426_EN_used' #Change to your data path
-inputFile = 'data_0426_en_all.csv'
+path = '0426_EN_used_task2' #Change to your data path
+inputFile = 'data_0426_en_task2.csv'
 df = pd.read_csv(inputFile)
 
 

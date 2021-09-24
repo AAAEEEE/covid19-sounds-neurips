@@ -3,7 +3,7 @@ This repo is for our submission *COVID-19 Sounds: A Large-Scale Audio Dataset fo
 
 ## Dataset
 
-As introduced in the paper, for full data access, a DTA should be signed. Subsets of two evaluated tasks are also available on request.
+As introduced in the paper, for full data access, a DTA needs to be signed. Subsets used for two evaluated tasks are also available on request.
 
 Contact: covid-19-sounds@cl.cam.ac.uk
 
@@ -11,11 +11,11 @@ Contact: covid-19-sounds@cl.cam.ac.uk
 
 Our model is implemented by Python3 with Tensorflow. To reproduce the results, codes are provided. 
 
-Requirements: setup.py
+Requirements: setup.py (requirements.txt)
 
 ### Automatic audio quality check
 
-[Yamnet](https://www.tensorflow.org/hub/tutorials/yamnet) is deployed to detect whether a sample is qualified: it should contain breathing, cough, or speech.  Silent and noising samples will be labelled and excluded from experiments.  We have already prepared the check list for all samples, but the codes are provided if researchers need to conduct their own data selection. 
+[Yamnet](https://www.tensorflow.org/hub/tutorials/yamnet) is deployed to detect whether a sample is qualified: it should contain breathing ('b'), cough ('c'), or voice ('v').  Silent and noising samples will be labelled as `'n'` and excluded from experiments.  We have already prepared the check list `'results_raw_20210426_lan_yamnet_noloc.csv'` for all samples, but codes are provided if researchers need to conduct their own data selection. 
 
 `python ./YAMNet/Inference_save.py`
 `python ./YAMNet/prediction_via_inference.py`
@@ -38,9 +38,9 @@ Transfer learning  is applied for our task based on a pre-trained CNN model name
   -   Extract feature `python 1_extract_opensmile.py`
   -   Classification `python 2_classifcation.py`
 - Pre-trained VGGish: 
-- Go to the model path `cd ./Respiratory_prediction/model`
-- Train the model `sh run_train_frozen.sh` 
-- Test the model `sh run_test_frozen.sh` 
+  - Go to the model path `cd ./Respiratory_prediction/model`
+  - Train the model `sh run_train_frozen.sh` 
+  - Test the model `sh run_test_frozen.sh` 
 - Fine-tuned VGGish: 
   - Go to the model path `cd ./Respiratory_prediction/model`
   - Train the model `sh run_train.sh` 
@@ -53,15 +53,15 @@ Results are summarisd in Table2,
   -   Extract feature `python 1_extract_opensmile.py`
   -   Classification `python 2_classifcation.py`
 - Pre-trained VGGish: 
-- Go to the model path `cd ./COVID19_prediction/COVID_model`
-- Train the model `sh run_train_frozen.sh` 
-- Test the model `sh run_test_frozen.sh` 
+  - Go to the model path `cd ./COVID19_prediction/COVID_model`
+  - Train the model `sh run_train_frozen.sh` 
+  - Test the model `sh run_test_frozen.sh` 
 - Fine-tuned VGGish: 
   - Go to the model path `cd ./COVID19_prediction/COVID_model`
   - Train the model `sh run_train.sh` 
   - Test the model `sh run_test.sh` 
 
-Results are summarisd in Table3,
+Results are summarised in Table3,
   ![model](./table3.png)
 
 
