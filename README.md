@@ -3,7 +3,7 @@ This repo contains the accompanying code for our submission *COVID-19 Sounds: A 
 
 ## Dataset
 
-As discussed in the paper, a DTA needs to be signed for full data access. The subsets used for the two main tasks are available upon reasonable request. Metadata and statistics can be seen in `data_statistics.ipynb`.
+As discussed in the paper, a DTA needs to be signed for full data access. The subsets used for the two main tasks are available upon reasonable request. Metadata and statistics can be seen in `statistics_all_platforms.ipynb`.
 
 Contact: covid-19-sounds@cl.cam.ac.uk
 
