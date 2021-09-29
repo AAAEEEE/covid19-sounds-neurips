@@ -9,9 +9,9 @@ Contact: covid-19-sounds@cl.cam.ac.uk
 
 ## Code
 
-Our models are implemented by Python3 with Tensorflow. We provide the necessary code to reproduce our results. 
+Our models are implemented in Python 3 using Tensorflow. We provide the necessary code to reproduce our results with the following environment: 
 
-Requirements: setup.py (requirements.txt)
+`setup.py (requirements.txt)`
 
 ### Automatic audio quality check
 
